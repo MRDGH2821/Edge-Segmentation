@@ -18,3 +18,9 @@ pdm install
 ```sh
 pdm run perform_edge
 ```
+
+## Image sources
+
+https://unsplash.com/photos/5zKFbbEryP8
+
+https://appsource.microsoft.com/en-us/product/power-bi-visuals/wa104381835?tab=overview
