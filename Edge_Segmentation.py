@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-IMG_PATH = './images/simple-image-wide.png'
+IMG_PATH = './images/simple-image.png'
 
 image_segmentation_names = ['Original Image', 'Sobel X', 'Laplacian of Gaussian',
                             'Sobel Y', 'Sobel', 'Prewitt X', 'Prewitt Y', 'Prewitt']
@@ -9,9 +9,14 @@ image_segmentation_names = ['Original Image', 'Sobel X', 'Laplacian of Gaussian'
 img = cv2.imread(IMG_PATH)
 print(img.shape)
 
+
+if(img.shape[0] > 3000):
+    img = cv2.resize(img, dsize=(0, 0), fx=0.1, fy=0.1)
+print(img.shape)
+
 for name in image_segmentation_names:
     cv2.namedWindow(name, cv2.WINDOW_NORMAL)
-    cv2.resizeWindow(name, img.shape[1], img.shape[0])
+    cv2.resizeWindow(name, height=img.shape[0], width=img.shape[1])
 
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 img_gaussian = cv2.GaussianBlur(gray, (3, 3), 0)
