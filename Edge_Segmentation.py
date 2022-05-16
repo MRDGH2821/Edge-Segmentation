@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-IMG_PATH = './images/simple-image.png'
+IMG_PATH = './images/chopped-vegetables.jpg'
 
 image_segmentation_names = ['Original Image', 'Sobel X', 'Laplacian of Gaussian',
                             'Sobel Y', 'Sobel', 'Prewitt X', 'Prewitt Y', 'Prewitt']
