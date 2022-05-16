@@ -1,0 +1,18 @@
+{
+  "python.analysis.extraPaths": ["__pypackages__/<major.minor>/lib", "./__pypackages__/3.8/lib"],
+  "cSpell.words": [
+    "imread",
+    "imshow",
+    "kernelx",
+    "ksize",
+    "messi",
+    "neighbour",
+    "opencv",
+    "prewittx",
+    "Rahit",
+    "Sobel",
+    "sobelx",
+    "Tahsin"
+  ],
+  "python.autoComplete.extraPaths": ["__pypackages__/<major.minor>/lib", "./__pypackages__/3.8/lib"]
+}
